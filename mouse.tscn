@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cms02e47cui2v"]
+
+[ext_resource type="Script" uid="uid://b7hfdybgw30va" path="res://mouse.gd" id="1_8f81w"]
+
+[node name="mouse" type="Node2D" unique_id=1792801537]
+script = ExtResource("1_8f81w")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1507357638]
+scale = Vector2(0.5, 0.5)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.0
+drag_top_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.0
