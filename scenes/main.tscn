@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://c8xdijfm3w1gq"]
 
 [ext_resource type="Texture2D" uid="uid://w7dm1ktrlexj" path="res://sprites/tileMapVazio.png" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://cms02e47cui2v" path="res://mouse.tscn" id="3_1bvp3"]
-[ext_resource type="Script" uid="uid://dhyhrmg0kw8lf" path="res://tile_map_layer.gd" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cms02e47cui2v" path="res://scenes/mouse.tscn" id="3_1bvp3"]
+[ext_resource type="Script" uid="uid://dhyhrmg0kw8lf" path="res://scripts/tile_map_layer.gd" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://bxqanpl457dv5" path="res://scripts/assetLoad.gd" id="4_6lq3m"]
+[ext_resource type="Script" uid="uid://sfm4vjhxx8y2" path="res://scripts/assetData.gd" id="5_tefeu"]
+[ext_resource type="Resource" uid="uid://ikatikumm0v2" path="res://assets/escada.tres" id="6_o6xl0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("1_0xm2m")
@@ -2148,3 +2151,16 @@ tile_set = SubResource("TileSet_v5vfr")
 script = ExtResource("3_h2yge")
 
 [node name="mouse" parent="." unique_id=1792801537 instance=ExtResource("3_1bvp3")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=357425927]
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer" unique_id=2115310160]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 200.0
+columns = 2
+
+[node name="AssetLoad" type="Node" parent="." unique_id=2000604237]
+script = ExtResource("4_6lq3m")
+assets = Array[ExtResource("5_tefeu")]([ExtResource("6_o6xl0")])
+grid_container = NodePath("../CanvasLayer/GridContainer")

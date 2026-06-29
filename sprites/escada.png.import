@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy35ncu8h1tee"
-path="res://.godot/imported/tilemapREALMENTEvazio.png-d7585e5f6f8e456d971ceb945032a935.ctex"
+uid="uid://dva40khkk40n2"
+path="res://.godot/imported/escada.png-6e5d4392ebc68518120fb26a8eaf161a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/tilemapREALMENTEvazio.png"
-dest_files=["res://.godot/imported/tilemapREALMENTEvazio.png-d7585e5f6f8e456d971ceb945032a935.ctex"]
+source_file="res://sprites/escada.png"
+dest_files=["res://.godot/imported/escada.png-6e5d4392ebc68518120fb26a8eaf161a.ctex"]
 
 [params]
 
