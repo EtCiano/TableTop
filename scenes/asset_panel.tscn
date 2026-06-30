@@ -3,14 +3,6 @@
 [ext_resource type="Script" uid="uid://cghuj7n5q544s" path="res://scripts/asset_panel.gd" id="1_40el2"]
 
 [sub_resource type="GDScript" id="GDScript_40el2"]
-script/source = "extends ColorRect
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	self.size = Vector2(100,  get_window().size.y)
-	self.pivot_offset = Vector2(self.size.x, (self.size.y/2)+50)
-"
 
 [node name="assetPanel" type="Control" unique_id=1095016866]
 layout_mode = 3
