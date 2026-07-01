@@ -8,6 +8,5 @@ script = ExtResource("1_qo5kx")
 name = "escada"
 texture = ExtResource("2_17xfl")
 collision = true
-sizeX = 2.0
-sizeY = 2.0
+size = Vector2(256, 256)
 metadata/_custom_type_script = "uid://sfm4vjhxx8y2"

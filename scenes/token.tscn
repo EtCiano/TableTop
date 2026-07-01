@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://capp05w6vfdf4"]
+
+[ext_resource type="Script" uid="uid://xymgmublyhi4" path="res://scripts/token.gd" id="1_7438t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vfr"]
+
+[node name="token" type="Node2D" unique_id=400613266]
+script = ExtResource("1_7438t")
+
+[node name="texture" type="Sprite2D" parent="." unique_id=1084907974]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1305916125]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=353418327]
+shape = SubResource("RectangleShape2D_v5vfr")
+
+[node name="Label" type="Label" parent="." unique_id=1365232096]
+offset_right = 40.0
+offset_bottom = 23.0
