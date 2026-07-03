@@ -8,5 +8,5 @@ script = ExtResource("1_v7ptm")
 name = "Cadeira"
 texture = ExtResource("2_v7ptm")
 collision = true
-size = Vector2(384, 384)
+size = Vector2(192, 192)
 metadata/_custom_type_script = "uid://sfm4vjhxx8y2"

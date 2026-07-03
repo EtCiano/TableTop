@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="FkGF0QtYlBmgW7X_A1oS">
-        <mxGraphModel dx="2370" dy="2823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1450" dy="1923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -99,19 +99,19 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-80" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;token.tscn&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-12" vertex="1">
                     <mxGeometry x="75" y="560" width="260" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ token : Node2D&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-80">
+                <mxCell id="2" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ token : Node2D&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-80" vertex="1">
                     <mxGeometry y="26" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ texture : Sprite2D&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-80">
+                <mxCell id="5" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ texture : Sprite2D&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-80" vertex="1">
                     <mxGeometry y="52" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ Label : Label" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-80">
+                <mxCell id="8" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ Label : Label" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-80" vertex="1">
                     <mxGeometry y="78" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ Area2D : Area2D&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-80">
+                <mxCell id="6" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ Area2D : Area2D&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-80" vertex="1">
                     <mxGeometry y="104" width="260" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&#x9;&lt;/span&gt;+ CollisionShape2D" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-80">
+                <mxCell id="7" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&#x9;&lt;/span&gt;+ CollisionShape2D" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-80" vertex="1">
                     <mxGeometry y="130" width="260" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERmany;endFill=0;startArrow=box;startFill=0;" parent="1" source="SYPDAzd3TEXQlh6_exHp-15" target="SYPDAzd3TEXQlh6_exHp-46" edge="1">
@@ -165,11 +165,10 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-41" value="seleção de objetos (Origem - destino)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="SYPDAzd3TEXQlh6_exHp-31" vertex="1">
                     <mxGeometry x="115" y="200" width="235" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="SYPDAzd3TEXQlh6_exHp-42" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERone;endFill=0;startArrow=block;startFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="SYPDAzd3TEXQlh6_exHp-47" target="SYPDAzd3TEXQlh6_exHp-23" edge="1">
+                <mxCell id="SYPDAzd3TEXQlh6_exHp-42" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=ERone;endFill=0;startArrow=block;startFill=0;" parent="1" source="SYPDAzd3TEXQlh6_exHp-47" target="SYPDAzd3TEXQlh6_exHp-23" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="50" y="460"/>
-                            <mxPoint x="-30" y="460"/>
+                            <mxPoint x="-30" y="457"/>
                             <mxPoint x="-30" y="597"/>
                         </Array>
                     </mxGeometry>
@@ -177,10 +176,10 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-43" value="res://scripts" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-50" y="270" width="770" height="1710" as="geometry"/>
                 </mxCell>
-                <mxCell id="SYPDAzd3TEXQlh6_exHp-44" value="asset_palette.gd : script" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
+                <mxCell id="SYPDAzd3TEXQlh6_exHp-44" value="asset_palette.gd : script" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#b1ddf0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#10739e;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
                     <mxGeometry x="100" y="70" width="320" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="+ asset_selected(asset:assetData) : signal&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-44">
+                <mxCell id="10" value="+ asset_selected(asset:assetData) : signal&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-44" vertex="1">
                     <mxGeometry y="26" width="320" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-45" value="+ available_assets : Array[assetData]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-44" vertex="1">
@@ -198,7 +197,7 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-49" value="btn pega as informações de cada assetData do array" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
                     <mxGeometry x="430" y="150" width="190" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="SYPDAzd3TEXQlh6_exHp-50" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;AssetData.gd : classe para resource&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
+                <mxCell id="SYPDAzd3TEXQlh6_exHp-50" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;AssetData.gd : classe para resource&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#b1ddf0;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#10739e;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
                     <mxGeometry x="100" y="250" width="320" height="182" as="geometry"/>
                 </mxCell>
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-51" value="+ name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-50" vertex="1">
@@ -219,7 +218,7 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-56" value="+ z_index: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-50" vertex="1">
                     <mxGeometry y="156" width="320" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="SYPDAzd3TEXQlh6_exHp-57" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;main.gd : script&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
+                <mxCell id="SYPDAzd3TEXQlh6_exHp-57" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;main.gd : script&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
                     <mxGeometry x="100" y="460" width="360" height="260" as="geometry"/>
                 </mxCell>
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-58" value="+ token_manager : TokenManager" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-57" vertex="1">
@@ -252,13 +251,12 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-67" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="SYPDAzd3TEXQlh6_exHp-43" source="SYPDAzd3TEXQlh6_exHp-48" target="SYPDAzd3TEXQlh6_exHp-62" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="100" y="173"/>
-                            <mxPoint x="50" y="173"/>
+                            <mxPoint x="50" y="213"/>
                             <mxPoint x="50" y="603"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="SYPDAzd3TEXQlh6_exHp-68" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;token.gd : classe para Node2D&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
+                <mxCell id="SYPDAzd3TEXQlh6_exHp-68" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;token.gd : classe para Node2D&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#b85450;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
                     <mxGeometry x="100" y="750" width="590" height="312" as="geometry"/>
                 </mxCell>
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-69" value="+ data : assetData" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-68" vertex="1">
@@ -279,7 +277,7 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-79" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ shape : RectangleShaper2D" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-68" vertex="1">
                     <mxGeometry y="156" width="590" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// configura o shape para ser o formato da colisão do token //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-68">
+                <mxCell id="24" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// configura o shape para ser o formato da colisão do token //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-68" vertex="1">
                     <mxGeometry y="182" width="590" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-87" value="+ _ready() : function&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-68" vertex="1">
@@ -294,26 +292,46 @@
                 <mxCell id="SYPDAzd3TEXQlh6_exHp-90" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// inicia o a função de _start_drag ou o _end_drag caso o botão esquerdo do mouse seja clicado //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-68" vertex="1">
                     <mxGeometry y="286" width="590" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="SYPDAzd3TEXQlh6_exHp-91" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;token_manager.gd : classe para Node2D&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
-                    <mxGeometry x="100" y="1100" width="590" height="130" as="geometry"/>
+                <mxCell id="SYPDAzd3TEXQlh6_exHp-91" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;token_manager.gd : classe para Node2D&lt;/span&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#b85450;" parent="SYPDAzd3TEXQlh6_exHp-43" vertex="1">
+                    <mxGeometry x="100" y="1100" width="590" height="234" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="+ tokens: Array[token]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                <mxCell id="9" value="+ tokens: Array[token]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-91" vertex="1">
                     <mxGeometry y="26" width="590" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="+ spawn_token(asset: assetData, pos: Vector2) -&amp;gt; Token : function" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                <mxCell id="11" value="+ spawn_token(asset: assetData, pos: Vector2) -&amp;gt; Token : function" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-91" vertex="1">
                     <mxGeometry y="52" width="590" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ token : Token" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                <mxCell id="15" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;+ token : Token" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-91" vertex="1">
                     <mxGeometry y="78" width="590" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// spawna o token na cena e configura ele usando a função da classe //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                <mxCell id="16" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// spawna o token na cena e configura ele usando a função da classe //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="SYPDAzd3TEXQlh6_exHp-91" vertex="1">
                     <mxGeometry y="104" width="590" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" edge="1" parent="SYPDAzd3TEXQlh6_exHp-43" source="SYPDAzd3TEXQlh6_exHp-72" target="16">
+                <mxCell id="26" value="+ remove_token(token: To&lt;span style=&quot;font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bwhite-space%3A%20pre%3B%26quot%3B%26gt%3B%26%239%3B%26lt%3B%2Fspan%26gt%3B%2F%2F%20spawna%20o%20token%20na%20cena%20e%20configura%20ele%20usando%20a%20fun%C3%A7%C3%A3o%20da%20classe%20%2F%2F%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingLeft%3D4%3BspacingRight%3D4%3Boverflow%3Dhidden%3Brotatable%3D0%3Bpoints%3D%5B%5B0%2C0.5%5D%2C%5B1%2C0.5%5D%5D%3BportConstraint%3Deastwest%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2250%22%20y%3D%221474%22%20width%3D%22590%22%20height%3D%2226%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;ken) : function" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                    <mxGeometry y="130" width="590" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// remove o token, ainda não usado //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                    <mxGeometry y="156" width="590" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="+&amp;nbsp;remove_all_tokens() : function" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                    <mxGeometry y="182" width="590" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;// remove todos os tokens, ainda não usado //" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SYPDAzd3TEXQlh6_exHp-91">
+                    <mxGeometry y="208" width="590" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" parent="SYPDAzd3TEXQlh6_exHp-43" source="SYPDAzd3TEXQlh6_exHp-72" target="16" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="740" y="870"/>
                             <mxPoint x="740" y="1220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="SYPDAzd3TEXQlh6_exHp-43" source="SYPDAzd3TEXQlh6_exHp-66" target="SYPDAzd3TEXQlh6_exHp-91">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="760" y="707"/>
+                            <mxPoint x="760" y="1110"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -365,13 +383,80 @@
                         <mxPoint x="50" y="1310" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1.002;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=box;endFill=0;startArrow=ERmany;startFill=0;" edge="1" parent="1" source="SYPDAzd3TEXQlh6_exHp-2" target="SYPDAzd3TEXQlh6_exHp-50">
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1.002;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=box;endFill=0;startArrow=ERmany;startFill=0;" parent="1" source="SYPDAzd3TEXQlh6_exHp-2" target="SYPDAzd3TEXQlh6_exHp-50" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="770"/>
                             <mxPoint x="770" y="534"/>
                         </Array>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="FLUXO GERAL DOS ASSETS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="220" width="320" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=none;html=1;" edge="1" parent="1" source="37" target="41">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="assetData.gd : script de classe" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;spacingTop=0;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="280" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="cria os assets como arquivos .tres na pasta assets/" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="37">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;" edge="1" parent="1" source="41" target="44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="asset_palette.gd : script" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;spacingTop=0;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="420" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="carrega os assets e exibe na UI" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="41">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;" edge="1" parent="1" source="51">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1080" y="700" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;" edge="1" parent="1" source="44" target="51">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;signal: asset_selected&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="56">
+                    <mxGeometry x="-0.2111" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="botao_asset.tscn : cena" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;spacingTop=0;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="560" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="botão clicável na paleta (UI) para cada asset" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="44">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" style="edgeStyle=none;html=1;" edge="1" parent="1" source="51" target="58">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="main.gd : script" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;spacingTop=0;fillColor=#d0cee2;strokeColor=#56517e;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="700" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;_unhandled_input() &amp;gt;&amp;gt;&amp;nbsp;&lt;/span&gt;pega o input do clique no asset" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="51">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="guarda o asset clicado como asset_selected" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="51">
+                    <mxGeometry y="80" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=none;html=1;" edge="1" parent="1" source="58" target="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="token_manager.gd : script de classe" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;spacingTop=0;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="880" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;spawn_token() &amp;gt;&amp;gt;&amp;nbsp;&lt;/span&gt;instancia token.tscn" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="58">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="token.gd : script de classe" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;spacingTop=0;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+                    <mxGeometry x="970" y="1020" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="setup() &amp;gt;&amp;gt; configura o asset no nó de token (sprite, label, collider)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;perimeterSpacing=0;" vertex="1" parent="62">
+                    <mxGeometry y="30" width="220" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

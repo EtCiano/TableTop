@@ -17,3 +17,5 @@ func _unhandled_input(event: InputEvent):
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if selected_asset != null:
 				token_manager.spawn_token(selected_asset, get_global_mouse_position())
+				selected_asset = null
+				get_viewport().set_input_as_handled()

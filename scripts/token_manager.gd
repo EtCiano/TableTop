@@ -2,14 +2,20 @@
 class_name TokenManager
 extends Node2D
 
+var tamanho_celula: int = 64
+
 const TOKEN_SCENE = preload("res://scenes/token.tscn")
 
 var tokens: Array[Token] = []
 
 func spawn_token(asset: assetData, pos: Vector2) -> Token:
+	#if fmod(asset.size.x/64, 2) == 0 or fmod(asset.size.y/64, 2) == 0:
+		#tamanho_celula = 64
+	#else:
+		#tamanho_celula = 128
 	var token = TOKEN_SCENE.instantiate()
 	add_child(token)
-	token.global_position = pos
+	token.global_position = Vector2(snapped(pos.x, tamanho_celula), snapped(pos.y, tamanho_celula))
 	token.setup(asset)
 	tokens.append(token)
 	return token

@@ -9,11 +9,18 @@ script = ExtResource("1_7438t")
 
 [node name="texture" type="Sprite2D" parent="." unique_id=1084907974]
 
+[node name="Label" type="Label" parent="." unique_id=1365232096]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_right = 32.0
+offset_bottom = 23.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 2
+
 [node name="Area2D" type="Area2D" parent="." unique_id=1305916125]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=353418327]
 shape = SubResource("RectangleShape2D_v5vfr")
-
-[node name="Label" type="Label" parent="." unique_id=1365232096]
-offset_right = 40.0
-offset_bottom = 23.0
