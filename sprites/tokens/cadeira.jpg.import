@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dva40khkk40n2"
-path="res://.godot/imported/escada.png-6e5d4392ebc68518120fb26a8eaf161a.ctex"
+uid="uid://xs38gv18la6g"
+path="res://.godot/imported/cadeira.jpg-fae4a2f72d71f15b1994a73813ff5ae1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/escada.png"
-dest_files=["res://.godot/imported/escada.png-6e5d4392ebc68518120fb26a8eaf161a.ctex"]
+source_file="res://sprites/tokens/cadeira.jpg"
+dest_files=["res://.godot/imported/cadeira.jpg-fae4a2f72d71f15b1994a73813ff5ae1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xs38gv18la6g"
-path="res://.godot/imported/cadeira.jpg-0a85739099ba3c7628624b14ada297bb.ctex"
+uid="uid://3bdvkyky1wmf"
+path="res://.godot/imported/arrows_output_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-cbf1613cd58d35d8a95ea518fd3e11e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/cadeira.jpg"
-dest_files=["res://.godot/imported/cadeira.jpg-0a85739099ba3c7628624b14ada297bb.ctex"]
+source_file="res://sprites/icones/arrows_output_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+dest_files=["res://.godot/imported/arrows_output_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-cbf1613cd58d35d8a95ea518fd3e11e4.ctex"]
 
 [params]
 

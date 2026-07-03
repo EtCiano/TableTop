@@ -2207,3 +2207,5 @@ layer = -1
 position = Vector2(576, 320)
 scale = Vector2(18, 10)
 texture = SubResource("GradientTexture2D_tipki")
+
+[node name="Node" type="Node" parent="." unique_id=954400437]

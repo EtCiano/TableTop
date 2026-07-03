@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://c8xdijfm3w1gq"]
 
-[ext_resource type="Texture2D" uid="uid://w7dm1ktrlexj" path="res://sprites/tileMapVazio.png" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://w7dm1ktrlexj" path="res://sprites/paredes/tileMapVazio.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dfn3ifh1gn5i6" path="res://scripts/main.gd" id="1_o6xl0"]
-[ext_resource type="Texture2D" uid="uid://xs38gv18la6g" path="res://sprites/cadeira.jpg" id="2_tefeu"]
+[ext_resource type="Texture2D" uid="uid://xs38gv18la6g" path="res://sprites/tokens/cadeira.jpg" id="2_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cms02e47cui2v" path="res://scenes/mouse.tscn" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://dhyhrmg0kw8lf" path="res://scripts/tile_map_layer.gd" id="3_h2yge"]
-[ext_resource type="Texture2D" uid="uid://dva40khkk40n2" path="res://sprites/escada.png" id="3_o6xl0"]
+[ext_resource type="Texture2D" uid="uid://dva40khkk40n2" path="res://sprites/tokens/escada.png" id="3_o6xl0"]
 [ext_resource type="Script" uid="uid://cwrdj0g7emnm5" path="res://scripts/token_manager.gd" id="7_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://b4wbk3brcmf41" path="res://scenes/asset_panel.tscn" id="8_tipki"]
+[ext_resource type="Script" uid="uid://dhsge3iutrma" path="res://scripts/grid_background.gd" id="9_xxxxx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("1_0xm2m")
@@ -2172,15 +2174,38 @@ sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 sources/1 = SubResource("TileSetAtlasSource_tipki")
 sources/2 = SubResource("TileSetAtlasSource_85g3d")
 
-[node name="Main" type="Node" unique_id=567971053]
+[sub_resource type="Gradient" id="Gradient_5v7j2"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tipki"]
+gradient = SubResource("Gradient_5v7j2")
+fill_to = Vector2(0.6482558, 1)
+repeat = 1
+
+[node name="Main" type="Node2D" unique_id=2082346798]
 script = ExtResource("1_o6xl0")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1801468563]
+[node name="GridBackground" type="Node2D" parent="." unique_id=180453975]
+script = ExtResource("9_xxxxx")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1943016398]
 scale = Vector2(0.5, 0.5)
 tile_set = SubResource("TileSet_v5vfr")
 script = ExtResource("3_h2yge")
 
 [node name="mouse" parent="." unique_id=1792801537 instance=ExtResource("3_1bvp3")]
 
-[node name="spawnAssets" type="Node2D" parent="." unique_id=1496931262]
+[node name="TokenManager" type="Node2D" parent="." unique_id=903005840]
 script = ExtResource("7_o6xl0")
+
+[node name="UI" parent="." unique_id=1692486827 instance=ExtResource("8_tipki")]
+
+[node name="Fundo" type="CanvasLayer" parent="." unique_id=345597790]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="Fundo" unique_id=2059995499]
+position = Vector2(576, 320)
+scale = Vector2(18, 10)
+texture = SubResource("GradientTexture2D_tipki")
+
+[node name="Node" type="Node" parent="." unique_id=954400437]

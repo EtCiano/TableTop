@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w7dm1ktrlexj"
-path="res://.godot/imported/tileMapVazio.png-7e3c19adf5b40efe050308e05129584c.ctex"
+uid="uid://bq8c011s6xb00"
+path="res://.godot/imported/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-5b9479b148d53e549f3f1e34aa8af7aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/tileMapVazio.png"
-dest_files=["res://.godot/imported/tileMapVazio.png-7e3c19adf5b40efe050308e05129584c.ctex"]
+source_file="res://sprites/icones/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+dest_files=["res://.godot/imported/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-5b9479b148d53e549f3f1e34aa8af7aa.ctex"]
 
 [params]
 

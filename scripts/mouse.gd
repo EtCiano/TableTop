@@ -6,8 +6,6 @@ var node_pos_origin: Vector2
 
 func _unhandled_input(event: InputEvent) -> void:
 	
-	print($Camera2D.zoom)
-	
 	var contagem_wheel = 0
 	
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_MIDDLE:

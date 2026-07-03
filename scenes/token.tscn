@@ -24,3 +24,5 @@ vertical_alignment = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=353418327]
 shape = SubResource("RectangleShape2D_v5vfr")
+
+[node name="Node" type="Node" parent="." unique_id=928630471]
