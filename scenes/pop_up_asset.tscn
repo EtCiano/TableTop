@@ -1,23 +1,31 @@
 [gd_scene format=3 uid="uid://d373kh0jwdyby"]
 
-[ext_resource type="Texture2D" uid="uid://bq8c011s6xb00" path="res://sprites/icones/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="1_xoh3m"]
-[ext_resource type="Texture2D" uid="uid://b61sbu8utem7i" path="res://sprites/icones/block_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="2_ogddl"]
-[ext_resource type="Texture2D" uid="uid://3bdvkyky1wmf" path="res://sprites/icones/arrows_output_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="3_wvqjt"]
+[ext_resource type="Theme" uid="uid://cnui8mvnahn8u" path="res://resources/temaPrincipal.tres" id="1_ogddl"]
+[ext_resource type="Texture2D" uid="uid://bq8c011s6xb00" path="res://sprites/icones/deletarIcon.png" id="1_xoh3m"]
+[ext_resource type="Texture2D" uid="uid://drmlpjd48op3i" path="res://sprites/icones/fecharIcon.png" id="3_vgohv"]
+[ext_resource type="Texture2D" uid="uid://3bdvkyky1wmf" path="res://sprites/icones/scaleIcon.png" id="3_wvqjt"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1b6nn"]
+load_path = "res://.godot/imported/block_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-da8bb7d3977da7dbab29baa9ea6f5366.ctex"
 
 [node name="PopUpAsset" type="Panel" unique_id=1615535910]
-offset_right = 152.0
-offset_bottom = 40.0
-pivot_offset = Vector2(0, 40)
+offset_right = 210.0
+offset_bottom = 50.0
+pivot_offset = Vector2(0, 50)
+theme = ExtResource("1_ogddl")
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=1691078284]
 layout_mode = 1
-anchors_preset = 4
+anchors_preset = 8
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 8.0
-offset_top = -12.0
-offset_right = 144.0
-offset_bottom = 12.0
+offset_left = -96.0
+offset_top = -15.0
+offset_right = 96.0
+offset_bottom = 9.0
+grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 32
 columns = 4
@@ -31,7 +39,7 @@ stretch_mode = 5
 [node name="BotaoBloquear" type="TextureButton" parent="GridContainer" unique_id=1934657503]
 custom_maximum_size = Vector2(32, 32)
 layout_mode = 2
-texture_normal = ExtResource("2_ogddl")
+texture_normal = SubResource("CompressedTexture2D_1b6nn")
 stretch_mode = 5
 
 [node name="BotaoAumentar" type="TextureButton" parent="GridContainer" unique_id=1257444598]
@@ -40,3 +48,9 @@ layout_mode = 2
 texture_normal = ExtResource("3_wvqjt")
 stretch_mode = 5
 flip_h = true
+
+[node name="BotaoFechar" type="TextureButton" parent="GridContainer" unique_id=1140777230]
+custom_maximum_size = Vector2(32, 32)
+layout_mode = 2
+texture_normal = ExtResource("3_vgohv")
+stretch_mode = 5

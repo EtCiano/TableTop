@@ -1,6 +1,5 @@
 extends Node2D
 
-const GRID_SIZE: int = 64
 const GRID_COLOR: Color = Color(1, 1, 1, 0.1)
 
 func _ready():
@@ -26,19 +25,19 @@ func _draw():
 	var top_left = camera_pos - half_size
 	var bottom_right = camera_pos + half_size
 	
-	var start_x = floor(top_left.x / GRID_SIZE) * GRID_SIZE
-	var start_y = floor(top_left.y / GRID_SIZE) * GRID_SIZE
-	var end_x = ceil(bottom_right.x / GRID_SIZE) * GRID_SIZE
-	var end_y = ceil(bottom_right.y / GRID_SIZE) * GRID_SIZE
+	var start_x = floor(top_left.x / Global.tamanho_grid) * Global.tamanho_grid
+	var start_y = floor(top_left.y / Global.tamanho_grid) * Global.tamanho_grid
+	var end_x = ceil(bottom_right.x / Global.tamanho_grid) * Global.tamanho_grid
+	var end_y = ceil(bottom_right.y / Global.tamanho_grid) * Global.tamanho_grid
 	
 	var width = max(1.0, 1.0 / camera_zoom.x)
 	
 	var x = start_x
 	while x <= end_x:
 		draw_line(Vector2(x, top_left.y), Vector2(x, bottom_right.y), GRID_COLOR, width)
-		x += GRID_SIZE
+		x += Global.tamanho_grid
 	
 	var y = start_y
 	while y <= end_y:
 		draw_line(Vector2(top_left.x, y), Vector2(bottom_right.x, y), GRID_COLOR, width)
-		y += GRID_SIZE
+		y += Global.tamanho_grid

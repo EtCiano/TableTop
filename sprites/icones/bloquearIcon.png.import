@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnjwfovt62rqm"
-path="res://.godot/imported/arrow_outward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-208d3a9fbbc3e31cbb21ae7c256c2f7a.ctex"
+uid="uid://b18c6ojntfn7l"
+path="res://.godot/imported/bloquearIcon.png-fb9c8098957dc69eabbd80fdb753d537.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/icones/arrow_outward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-dest_files=["res://.godot/imported/arrow_outward_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-208d3a9fbbc3e31cbb21ae7c256c2f7a.ctex"]
+source_file="res://sprites/icones/bloquearIcon.png"
+dest_files=["res://.godot/imported/bloquearIcon.png-fb9c8098957dc69eabbd80fdb753d537.ctex"]
 
 [params]
 

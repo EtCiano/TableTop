@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq8c011s6xb00"
-path="res://.godot/imported/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-5b9479b148d53e549f3f1e34aa8af7aa.ctex"
+uid="uid://bnjwfovt62rqm"
+path="res://.godot/imported/setaIcon.png-6331afa6181a5f96e2e1e4bc6795960b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/icones/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
-dest_files=["res://.godot/imported/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png-5b9479b148d53e549f3f1e34aa8af7aa.ctex"]
+source_file="res://sprites/icones/setaIcon.png"
+dest_files=["res://.godot/imported/setaIcon.png-6331afa6181a5f96e2e1e4bc6795960b.ctex"]
 
 [params]
 

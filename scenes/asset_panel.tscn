@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b4wbk3brcmf41"]
 
+[ext_resource type="Theme" uid="uid://cnui8mvnahn8u" path="res://resources/temaPrincipal.tres" id="1_5uim2"]
 [ext_resource type="Script" uid="uid://c2m4in4emtk8v" path="res://scripts/asset_palette.gd" id="1_40el2"]
 
 [node name="UI" type="CanvasLayer" unique_id=1692486827]
@@ -10,15 +11,18 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -176.0
+offset_left = -192.0
 offset_top = -289.0
+offset_right = -16.0
 offset_bottom = 289.0
 grow_horizontal = 0
 grow_vertical = 2
+theme = ExtResource("1_5uim2")
 script = ExtResource("1_40el2")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="assetPalette" unique_id=298838481]
 layout_mode = 2
+theme = ExtResource("1_5uim2")
 
 [node name="GridContainer" type="GridContainer" parent="assetPalette/ScrollContainer" unique_id=2086595706]
 layout_mode = 2
