@@ -8,6 +8,8 @@ const MAIN_SCENE = preload("res://scenes/main.tscn")
 func setup(asset: assetData):
 	data = asset
 	
+	$texture.material = data.shader
+	
 	$texture.texture = asset.texture
 	z_index = asset.z_index
 	

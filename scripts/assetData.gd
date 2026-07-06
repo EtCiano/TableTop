@@ -7,3 +7,5 @@ extends Resource
 @export var size: Vector2
 @export var movivel: bool = true
 @export var z_index: int = 0 
+@export var token: bool = false
+@export var shader: ShaderMaterial

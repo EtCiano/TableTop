@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://sfm4vjhxx8y2" path="res://scripts/assetData.gd" id="1_qo5kx"]
 [ext_resource type="Texture2D" uid="uid://dva40khkk40n2" path="res://sprites/tokens/escada.png" id="2_17xfl"]
+[ext_resource type="Material" uid="uid://cfkvnngchlwb5" path="res://resources/shaders/shaderCadeira.tres" id="2_vcgka"]
 
 [resource]
 script = ExtResource("1_qo5kx")
@@ -9,4 +10,5 @@ name = "escada"
 texture = ExtResource("2_17xfl")
 collision = true
 size = Vector2(128, 128)
+shader = ExtResource("2_vcgka")
 metadata/_custom_type_script = "uid://sfm4vjhxx8y2"

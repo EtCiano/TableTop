@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="assetData" format=3 uid="uid://croo5lluthxnb"]
 
 [ext_resource type="Script" uid="uid://sfm4vjhxx8y2" path="res://scripts/assetData.gd" id="1_v7ptm"]
+[ext_resource type="Material" uid="uid://cfkvnngchlwb5" path="res://resources/shaders/shaderCadeira.tres" id="2_csm45"]
 [ext_resource type="Texture2D" uid="uid://xs38gv18la6g" path="res://sprites/tokens/cadeira.jpg" id="2_v7ptm"]
 
 [resource]
@@ -9,4 +10,5 @@ name = "Cadeira"
 texture = ExtResource("2_v7ptm")
 collision = true
 size = Vector2(192, 192)
+shader = ExtResource("2_csm45")
 metadata/_custom_type_script = "uid://sfm4vjhxx8y2"

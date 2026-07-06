@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cfkvnngchlwb5"]
+
+[ext_resource type="Shader" uid="uid://d2y7h5brshhrw" path="res://resources/shaders/shaderCadeira.gdshader" id="1_64p02"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_mxoy5"]
+noise_type = 0
+frequency = 0.0057
+fractal_type = 0
+fractal_weighted_strength = 0.2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_km4r7"]
+noise = SubResource("FastNoiseLite_mxoy5")
+seamless = true
+seamless_blend_skirt = 1.0
+
+[resource]
+shader = ExtResource("1_64p02")
+shader_parameter/texturaRuido = SubResource("NoiseTexture2D_km4r7")
+shader_parameter/ativarRuido = true
+shader_parameter/ativarVertex = false
+shader_parameter/animar = true
+shader_parameter/suavidade = 0.2
+shader_parameter/limite = 0.35999999195328
+shader_parameter/velocidadeAndar = 0.1
+shader_parameter/corRuido = Color(1, 0, 0, 1)
+shader_parameter/amplitude = 50.0
+shader_parameter/suave = false
+shader_parameter/velocidadeOnda = 1.0
