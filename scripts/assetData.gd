@@ -8,4 +8,4 @@ extends Resource
 @export var movivel: bool = true
 @export var z_index: int = 0 
 @export var token: bool = false
-@export var shader: ShaderMaterial
+@export var material: Material

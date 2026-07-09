@@ -1,24 +1,26 @@
 [gd_scene format=3 uid="uid://capp05w6vfdf4"]
 
 [ext_resource type="Script" uid="uid://xymgmublyhi4" path="res://scripts/token.gd" id="1_7438t"]
+[ext_resource type="Texture2D" uid="uid://4wtgupkg165a" path="res://sprites/icones/moverIcon.png" id="2_20bui"]
+[ext_resource type="Texture2D" uid="uid://n1u0ug23u7jr" path="res://sprites/icones/bordinhas.png" id="2_jds53"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vfr"]
 
 [node name="token" type="Node2D" unique_id=400613266]
 script = ExtResource("1_7438t")
 
-[node name="texture" type="Sprite2D" parent="." unique_id=1084907974]
+[node name="selecionadoIcon" type="Sprite2D" parent="." unique_id=1500194657]
+position = Vector2(-5.9604656e-07, 5.9604645e-07)
+scale = Vector2(0.039062504, 0.03906249)
+texture = ExtResource("2_jds53")
 
-[node name="Label" type="Label" parent="." unique_id=1365232096]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -32.0
-offset_right = 32.0
-offset_bottom = 23.0
-grow_horizontal = 2
-horizontal_alignment = 1
-vertical_alignment = 2
+[node name="moverIcon" type="Sprite2D" parent="." unique_id=1071432060]
+z_index = 1
+position = Vector2(-2.384188e-07, 1.013279e-06)
+scale = Vector2(0.039062496, -0.039062496)
+texture = ExtResource("2_20bui")
+
+[node name="texture" type="Sprite2D" parent="." unique_id=1084907974]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1305916125]
 
@@ -26,3 +28,9 @@ vertical_alignment = 2
 shape = SubResource("RectangleShape2D_v5vfr")
 
 [node name="Node" type="Node" parent="." unique_id=928630471]
+
+[node name="Timer" type="Timer" parent="." unique_id=1356304535]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

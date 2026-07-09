@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://do4re06lulcdv"]
 
 [node name="BotaoAsset" type="TextureButton" unique_id=58683084]
-custom_minimum_size = Vector2(80, 80)
+custom_minimum_size = Vector2(60, 60)
+ignore_texture_size = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=985030048]
 layout_mode = 1

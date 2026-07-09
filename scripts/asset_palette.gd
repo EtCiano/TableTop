@@ -8,6 +8,7 @@ var available_assets: Array[assetData] = []
 const BOTAO_CENA = preload("res://scenes/botao_asset.tscn")
 
 func _ready():
+	$ScrollContainer.custom_minimum_size = Vector2(size.x-50, size.y-50)
 	_load_assets_from_folder("res://assets/")
 	_populate_grid()
 
