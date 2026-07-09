@@ -2,6 +2,8 @@
 
 [ext_resource type="Theme" uid="uid://cnui8mvnahn8u" path="res://resources/temas/temaPrincipal.tres" id="1_5uim2"]
 [ext_resource type="Script" uid="uid://c2m4in4emtk8v" path="res://scripts/asset_palette.gd" id="1_40el2"]
+[ext_resource type="LabelSettings" uid="uid://cgys3vbc5xgaw" path="res://resources/new_label_settings.tres" id="3_q7k2b"]
+[ext_resource type="Script" uid="uid://bo8os7x521j4k" path="res://scenes/sliderUI.gd" id="4_5ollh"]
 
 [node name="UI" type="CanvasLayer" unique_id=1692486827]
 
@@ -11,18 +13,18 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -216.0
-offset_top = -289.0
-offset_right = -16.0
-offset_bottom = 289.0
+offset_left = -225.0
+offset_top = -303.0
+offset_right = -25.0
+offset_bottom = 299.0
 grow_horizontal = 0
 grow_vertical = 2
-pivot_offset = Vector2(256, 285)
+pivot_offset = Vector2(200, 289)
 theme = ExtResource("1_5uim2")
 script = ExtResource("1_40el2")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="assetPalette" unique_id=298838481]
-custom_minimum_size = Vector2(160, 528)
+custom_minimum_size = Vector2(160, 598)
 clip_contents = false
 layout_mode = 2
 size_flags_horizontal = 4
@@ -36,3 +38,59 @@ size_flags_vertical = 4
 theme_override_constants/h_separation = 30
 theme_override_constants/v_separation = 60
 columns = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1309042283]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -111.0
+offset_right = 332.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_5uim2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1583830988]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -149.0
+offset_top = -35.0
+offset_right = 149.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=579241806]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Tamanho da Parede"
+label_settings = ExtResource("3_q7k2b")
+
+[node name="HSlider" type="HSlider" parent="Panel/VBoxContainer" unique_id=1011698166]
+custom_minimum_size = Vector2(298, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+min_value = 0.1
+max_value = 5.0
+step = 0.1
+value = 0.5
+script = ExtResource("4_5ollh")
+
+[node name="tamanhoLabel" type="Label" parent="Panel/VBoxContainer" unique_id=121798642]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "64 px (0.5 quadrados)"
+label_settings = ExtResource("3_q7k2b")
+
+[connection signal="value_changed" from="Panel/VBoxContainer/HSlider" to="Panel/VBoxContainer/HSlider" method="_on_value_changed"]

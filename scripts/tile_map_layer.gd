@@ -10,6 +10,9 @@ func _ready() -> void:
 	scale = Global.tamanho_celula/128
 	#tile_set.tile_size = Global.tamanho_grid*2
 
+func _process(delta: float) -> void:
+	scale = Global.tamanho_celula/128
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		is_drawing = event.pressed
