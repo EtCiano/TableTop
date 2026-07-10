@@ -1,6 +1,7 @@
 class_name Token
 extends Node2D
 
+var pop_up_atual: Panel
 var data: assetData
 var clicado: bool = false
 var segurando: bool = false
@@ -35,7 +36,7 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
-				if clicado:
+				if clicado and data.movivel:
 					segurando = true
 					fechar_popUp()
 					$moverIcon.visible = true
@@ -67,12 +68,13 @@ func abrir_popUp():
 	
 	var nodeGrupo = get_node("Node")
 	var pop_up = POP_UP_SCENE.instantiate()
+	pop_up_atual = pop_up
 	
 	fechar_popUp()
 	nodeGrupo.add_child(pop_up)
 	pop_up.name = 'pop_up_asset'
 
-	if data.movivel:
+	if not data.movivel:
 		pop_up.get_node('GridContainer/BotaoBloquear').texture_normal = preload("res://sprites/icones/bloquearIcon.png")
 	else:
 		pop_up.get_node('GridContainer/BotaoBloquear').texture_normal = preload("res://sprites/icones/desbloquearIcon.png")
@@ -102,7 +104,10 @@ func _on_deletar_pressed():
 
 func _on_bloquear_pressed():
 	data.movivel = !data.movivel
-	fechar_popUp()
+	if not data.movivel:
+		pop_up_atual.get_node('GridContainer/BotaoBloquear').texture_normal = preload("res://sprites/icones/bloquearIcon.png")
+	else:
+		pop_up_atual.get_node('GridContainer/BotaoBloquear').texture_normal = preload("res://sprites/icones/desbloquearIcon.png")
 
 func _on_mover_pressed():
 	segurando = true
