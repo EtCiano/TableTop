@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://cnui8mvnahn8u" path="res://resources/temas/temaPrincipal.tres" id="1_5uim2"]
 [ext_resource type="Script" uid="uid://c2m4in4emtk8v" path="res://scripts/asset_palette.gd" id="1_40el2"]
 [ext_resource type="LabelSettings" uid="uid://cgys3vbc5xgaw" path="res://resources/new_label_settings.tres" id="3_q7k2b"]
-[ext_resource type="Script" uid="uid://bo8os7x521j4k" path="res://scenes/sliderUI.gd" id="4_5ollh"]
+[ext_resource type="Script" uid="uid://bo8os7x521j4k" path="res://scripts/sliderUI.gd" id="4_5ollh"]
 
 [node name="UI" type="CanvasLayer" unique_id=1692486827]
 

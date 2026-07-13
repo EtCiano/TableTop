@@ -6,8 +6,10 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vfr"]
 
-[node name="token" type="Node2D" unique_id=400613266]
+[node name="token" type="CharacterBody2D" unique_id=400613266]
 script = ExtResource("1_7438t")
+
+[node name="BodyCollisionShape" type="CollisionShape2D" parent="."]
 
 [node name="selecionadoIcon" type="Sprite2D" parent="." unique_id=1500194657]
 position = Vector2(-5.9604656e-07, 5.9604645e-07)

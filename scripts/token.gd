@@ -1,5 +1,5 @@
 class_name Token
-extends Node2D
+extends CharacterBody2D
 
 var pop_up_atual: Panel
 var data: assetData
@@ -31,6 +31,11 @@ func setup(asset: assetData):
 	var shape = RectangleShape2D.new()
 	shape.size = asset.size
 	$Area2D/CollisionShape2D.shape = shape
+	# Cria shape de física para o CharacterBody2D (colisão com paredes)
+	var body_col = CollisionShape2D.new()
+	body_col.shape = shape
+	body_col.name = "BodyCollisionShape"
+	add_child(body_col)
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton:
@@ -53,10 +58,17 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 			
 	if event is InputEventMouseMotion and segurando:
 		var mouse_pos = get_global_mouse_position()
-		global_position = Vector2(
+		var target_pos = Vector2(
 			snapped(mouse_pos.x, Global.tamanho_grid / 2),
 			snapped(mouse_pos.y, Global.tamanho_grid / 2)
 		)
+		var displacement = target_pos - global_position
+		if displacement.length() > 0:
+			move_and_collide(displacement)
+			
+		if mouse_pos.distance_to(global_position) > Global.tamanho_grid * 1.5:
+			segurando = false
+			$moverIcon.visible = false
 
 func abrir_popUp():
 	if Global.token_selecionado and self != Global.token_selecionado:
