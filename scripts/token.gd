@@ -31,7 +31,6 @@ func setup(asset: assetData):
 	var shape = RectangleShape2D.new()
 	shape.size = asset.size
 	$Area2D/CollisionShape2D.shape = shape
-	# Cria shape de física para o CharacterBody2D (colisão com paredes)
 	var body_col = CollisionShape2D.new()
 	body_col.shape = shape
 	body_col.name = "BodyCollisionShape"
@@ -59,8 +58,8 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseMotion and segurando:
 		var mouse_pos = get_global_mouse_position()
 		var target_pos = Vector2(
-			snapped(mouse_pos.x, Global.tamanho_grid / 2),
-			snapped(mouse_pos.y, Global.tamanho_grid / 2)
+			snapped(mouse_pos.x, Global.snap / 2),
+			snapped(mouse_pos.y, Global.snap / 2)
 		)
 		var displacement = target_pos - global_position
 		if displacement.length() > 0:
@@ -122,9 +121,10 @@ func _on_bloquear_pressed():
 		pop_up_atual.get_node('GridContainer/BotaoBloquear').texture_normal = preload("res://sprites/icones/desbloquearIcon.png")
 
 func _on_mover_pressed():
-	segurando = true
-	$moverIcon.visible = true
-	fechar_popUp()
+	if data.movivel:
+		segurando = true
+		$moverIcon.visible = true
+		fechar_popUp()
 
 func _on_timer_timeout():
 	clicado = false
