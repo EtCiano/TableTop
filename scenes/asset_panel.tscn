@@ -2,9 +2,10 @@
 
 [ext_resource type="Theme" uid="uid://cnui8mvnahn8u" path="res://resources/temas/temaPrincipal.tres" id="1_5uim2"]
 [ext_resource type="Script" uid="uid://c2m4in4emtk8v" path="res://scripts/asset_palette.gd" id="1_40el2"]
-[ext_resource type="LabelSettings" uid="uid://cgys3vbc5xgaw" path="res://resources/new_label_settings.tres" id="3_q7k2b"]
-[ext_resource type="Script" uid="uid://bo8os7x521j4k" path="res://scripts/sliderParede.gd" id="4_5ollh"]
-[ext_resource type="Script" uid="uid://c162etx8k8xeq" path="res://scenes/sliderSnap.gd" id="5_5ollh"]
+[ext_resource type="LabelSettings" uid="uid://cgys3vbc5xgaw" path="res://resources/temas/new_label_settings.tres" id="3_q7k2b"]
+[ext_resource type="Script" uid="uid://bo8os7x521j4k" path="res://scripts/controls/sliderParede.gd" id="4_5ollh"]
+[ext_resource type="Script" uid="uid://c162etx8k8xeq" path="res://scripts/controls/sliderSnap.gd" id="5_5ollh"]
+[ext_resource type="PackedScene" uid="uid://b36iu120th07h" path="res://scenes/modal_asset_config.tscn" id="6_aonxe"]
 
 [node name="UI" type="CanvasLayer" unique_id=1692486827]
 
@@ -94,14 +95,14 @@ size_flags_vertical = 8
 text = "64 px (0.5 quadrados)"
 label_settings = ExtResource("3_q7k2b")
 
-[node name="sliderSnap" type="Panel" parent="sliderParede" unique_id=1439139375]
-layout_mode = 1
-offset_left = -339.0
-offset_right = -14.0
-offset_bottom = 86.0
+[node name="sliderSnap" type="Panel" parent="." unique_id=1439139375]
+offset_left = 244.0
+offset_top = 537.0
+offset_right = 569.0
+offset_bottom = 623.0
 theme = ExtResource("1_5uim2")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="sliderParede/sliderSnap" unique_id=345890651]
+[node name="VBoxContainer" type="VBoxContainer" parent="sliderSnap" unique_id=345890651]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -116,14 +117,14 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Label" type="Label" parent="sliderParede/sliderSnap/VBoxContainer" unique_id=492408706]
+[node name="Label" type="Label" parent="sliderSnap/VBoxContainer" unique_id=492408706]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Snap"
 label_settings = ExtResource("3_q7k2b")
 
-[node name="HSlider" type="HSlider" parent="sliderParede/sliderSnap/VBoxContainer" unique_id=1120203865]
+[node name="HSlider" type="HSlider" parent="sliderSnap/VBoxContainer" unique_id=1120203865]
 custom_minimum_size = Vector2(298, 0)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -134,12 +135,15 @@ step = 0.1
 value = 0.5
 script = ExtResource("5_5ollh")
 
-[node name="tamanhoLabel" type="Label" parent="sliderParede/sliderSnap/VBoxContainer" unique_id=1871645284]
+[node name="tamanhoLabel" type="Label" parent="sliderSnap/VBoxContainer" unique_id=1871645284]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 text = "64 px (0.5 quadrados)"
 label_settings = ExtResource("3_q7k2b")
 
+[node name="ModalAssetConfig" parent="." unique_id=23284959 instance=ExtResource("6_aonxe")]
+visible = false
+
 [connection signal="value_changed" from="sliderParede/VBoxContainer/HSlider" to="sliderParede/VBoxContainer/HSlider" method="_on_value_changed"]
-[connection signal="value_changed" from="sliderParede/sliderSnap/VBoxContainer/HSlider" to="sliderParede/sliderSnap/VBoxContainer/HSlider" method="_on_value_changed"]
+[connection signal="value_changed" from="sliderSnap/VBoxContainer/HSlider" to="sliderSnap/VBoxContainer/HSlider" method="_on_value_changed"]

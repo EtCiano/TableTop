@@ -1,7 +1,7 @@
 class_name Token
 extends CharacterBody2D
 
-var pop_up_atual: Panel
+var pop_up_atual: PanelContainer
 var data: assetData
 var clicado: bool = false
 var segurando: bool = false
@@ -9,6 +9,7 @@ var selecionado: bool = false
 
 const POP_UP_SCENE = preload("res://scenes/pop_up_asset.tscn")
 const MAIN_SCENE = preload("res://scenes/main.tscn")
+const CONFIG_SCENE = preload("res://scenes/modal_asset_config.tscn")
 
 func _ready():
 	$Area2D.input_event.connect(_on_area_2d_input_event)
@@ -94,6 +95,7 @@ func abrir_popUp():
 	pop_up.get_node('GridContainer/BotaoBloquear').pressed.connect(_on_bloquear_pressed)
 	pop_up.get_node('GridContainer/BotaoMover').pressed.connect(_on_mover_pressed)
 	pop_up.get_node('GridContainer/BotaoFechar').pressed.connect(_signal_fechar_popUp)
+	pop_up.get_node('GridContainer/BotaoConfig').pressed.connect(_on_config_pressed)
 	
 	pop_up.global_position = get_global_mouse_position()
 	$selecionadoIcon.visible = true
@@ -129,3 +131,10 @@ func _on_mover_pressed():
 func _on_timer_timeout():
 	clicado = false
 	fechar_popUp()
+
+func _on_config_pressed():
+	var modal_config = get_node("/root/Main/UI/ModalAssetConfig")
+	Global.asset_config = data
+	modal_config.visible = true
+	modal_config.get_node('HBoxContainer2/VBoxContainer1/imagemAsset').texture_normal = data.texture
+	#modal_config

@@ -7,7 +7,6 @@ extends Node2D
 var selected_asset: assetData = null
 
 func _ready():
-	print('funcionou')
 	palette.asset_selected.connect(_on_asset_selected)
 
 func _on_asset_selected(asset: assetData):

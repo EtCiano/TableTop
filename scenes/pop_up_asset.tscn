@@ -5,50 +5,47 @@
 [ext_resource type="Texture2D" uid="uid://drmlpjd48op3i" path="res://sprites/icones/fecharIcon.png" id="3_vgohv"]
 [ext_resource type="Texture2D" uid="uid://3bdvkyky1wmf" path="res://sprites/icones/scaleIcon.png" id="3_wvqjt"]
 [ext_resource type="Texture2D" uid="uid://b18c6ojntfn7l" path="res://sprites/icones/bloquearIcon.png" id="4_ogddl"]
+[ext_resource type="Texture2D" uid="uid://cepxs0rjcg8n7" path="res://sprites/icones/configIcon.png" id="6_wvqjt"]
 
-[node name="PopUpAsset" type="Panel" unique_id=1615535910]
-offset_right = 210.0
-offset_bottom = 42.0
-pivot_offset = Vector2(0, 42)
+[node name="PanelContainer" type="PanelContainer" unique_id=1642691731]
+offset_right = 271.0
+offset_bottom = 43.0
 theme = ExtResource("1_ogddl")
 
-[node name="GridContainer" type="GridContainer" parent="." unique_id=1691078284]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -96.0
-offset_top = -12.0
-offset_right = 96.0
-offset_bottom = 12.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="GridContainer" type="GridContainer" parent="." unique_id=2068081655]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_constants/h_separation = 32
-columns = 4
+columns = 5
 
-[node name="BotaoMover" type="TextureButton" parent="GridContainer" unique_id=1257444598]
+[node name="BotaoMover" type="TextureButton" parent="GridContainer" unique_id=406876211]
 custom_maximum_size = Vector2(32, 32)
 layout_mode = 2
 texture_normal = ExtResource("3_wvqjt")
 stretch_mode = 5
 flip_h = true
 
-[node name="BotaoDeletar" type="TextureButton" parent="GridContainer" unique_id=1581351469]
+[node name="BotaoDeletar" type="TextureButton" parent="GridContainer" unique_id=2109999927]
 custom_maximum_size = Vector2(32, 32)
 layout_mode = 2
 texture_normal = ExtResource("1_xoh3m")
 stretch_mode = 5
 
-[node name="BotaoBloquear" type="TextureButton" parent="GridContainer" unique_id=1934657503]
+[node name="BotaoBloquear" type="TextureButton" parent="GridContainer" unique_id=2050463201]
 custom_maximum_size = Vector2(32, 32)
 layout_mode = 2
 texture_normal = ExtResource("4_ogddl")
 stretch_mode = 5
 
-[node name="BotaoFechar" type="TextureButton" parent="GridContainer" unique_id=1140777230]
+[node name="BotaoFechar" type="TextureButton" parent="GridContainer" unique_id=731139867]
 custom_maximum_size = Vector2(32, 32)
 layout_mode = 2
 texture_normal = ExtResource("3_vgohv")
+stretch_mode = 5
+
+[node name="BotaoConfig" type="TextureButton" parent="GridContainer" unique_id=772437601]
+custom_maximum_size = Vector2(32, 32)
+layout_mode = 2
+texture_normal = ExtResource("6_wvqjt")
 stretch_mode = 5

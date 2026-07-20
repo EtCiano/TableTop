@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://b36iu120th07h"]
+
+[ext_resource type="Theme" uid="uid://cnui8mvnahn8u" path="res://resources/temas/temaPrincipal.tres" id="1_0dieh"]
+[ext_resource type="Texture2D" uid="uid://cx5rjkeva2xgv" path="res://icon.svg" id="2_1nsfn"]
+[ext_resource type="Texture2D" uid="uid://drmlpjd48op3i" path="res://sprites/icones/fecharIcon.png" id="2_7cst5"]
+[ext_resource type="Script" uid="uid://y5d5ig1xti2j" path="res://scenes/modal_asset_config.gd" id="2_sw01l"]
+[ext_resource type="Script" uid="uid://d0rmaogf87ffk" path="res://scripts/controls/asset_config_size_x.gd" id="5_ajugv"]
+[ext_resource type="Script" uid="uid://31ew3rtukth3" path="res://scripts/controls/asset_config_size_y.gd" id="6_xnyaa"]
+[ext_resource type="Script" uid="uid://bd832sp8vg02g" path="res://scripts/controls/asset_config_z_index.gd" id="7_wribr"]
+[ext_resource type="Script" uid="uid://c3701y8ccxv6s" path="res://scripts/controls/asset_config_colisao_toggle.gd" id="8_m24d6"]
+
+[node name="ModalAssetConfig" type="PanelContainer" unique_id=23284959]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -546.0
+offset_top = -304.0
+offset_right = -255.0
+offset_bottom = 183.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0dieh")
+script = ExtResource("2_sw01l")
+
+[node name="Button" type="Button" parent="." unique_id=1731874842]
+z_index = 1
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("1_0dieh")
+icon = ExtResource("2_7cst5")
+icon_alignment = 1
+expand_icon = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=603759551]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_0dieh")
+
+[node name="VBoxContainer1" type="VBoxContainer" parent="HBoxContainer2" unique_id=673007581]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_0dieh")
+
+[node name="imagemAsset" type="TextureButton" parent="HBoxContainer2/VBoxContainer1" unique_id=1668566412]
+custom_minimum_size = Vector2(200, 250)
+custom_maximum_size = Vector2(200, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 25)
+texture_normal = ExtResource("2_1nsfn")
+stretch_mode = 4
+
+[node name="tamanhoHBox" type="HBoxContainer" parent="HBoxContainer2/VBoxContainer1" unique_id=875323831]
+custom_minimum_size = Vector2(239, 0)
+custom_maximum_size = Vector2(239, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_0dieh")
+
+[node name="sizeLabel" type="Label" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox" unique_id=594357963]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme = ExtResource("1_0dieh")
+text = "Size"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox" unique_id=1122704561]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+
+[node name="sizeXLabel" type="Label" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox/VBoxContainer2" unique_id=1814050306]
+layout_mode = 2
+theme = ExtResource("1_0dieh")
+text = "X:"
+
+[node name="sizeYLabel" type="Label" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox/VBoxContainer2" unique_id=1243651326]
+layout_mode = 2
+theme = ExtResource("1_0dieh")
+text = "Y:"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox" unique_id=1243196734]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="sizeX" type="SpinBox" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox/VBoxContainer3" unique_id=1931892076]
+layout_mode = 2
+theme = ExtResource("1_0dieh")
+step = 0.1
+suffix = "tiles (00 Px)"
+script = ExtResource("5_ajugv")
+
+[node name="sizeY" type="SpinBox" parent="HBoxContainer2/VBoxContainer1/tamanhoHBox/VBoxContainer3" unique_id=497024201]
+layout_mode = 2
+theme = ExtResource("1_0dieh")
+step = 0.1
+suffix = "tiles (00 Px)"
+script = ExtResource("6_xnyaa")
+
+[node name="ZIndexHBox" type="HBoxContainer" parent="HBoxContainer2/VBoxContainer1" unique_id=2136994821]
+custom_minimum_size = Vector2(239, 0)
+custom_maximum_size = Vector2(239, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_0dieh")
+
+[node name="Label" type="Label" parent="HBoxContainer2/VBoxContainer1/ZIndexHBox" unique_id=1896459151]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme = ExtResource("1_0dieh")
+text = "Z-Index"
+
+[node name="ZIndex" type="SpinBox" parent="HBoxContainer2/VBoxContainer1/ZIndexHBox" unique_id=2086392596]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_0dieh")
+script = ExtResource("7_wribr")
+
+[node name="ColisaoHBox" type="HBoxContainer" parent="HBoxContainer2/VBoxContainer1" unique_id=1700202656]
+custom_minimum_size = Vector2(239, 0)
+custom_maximum_size = Vector2(239, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_0dieh")
+
+[node name="LabelsVBox" type="VBoxContainer" parent="HBoxContainer2/VBoxContainer1/ColisaoHBox" unique_id=146423996]
+layout_mode = 2
+
+[node name="ColisaoLabel" type="Label" parent="HBoxContainer2/VBoxContainer1/ColisaoHBox/LabelsVBox" unique_id=1634017172]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 1
+theme = ExtResource("1_0dieh")
+text = "Colisão"
+
+[node name="TogglesVBox" type="VBoxContainer" parent="HBoxContainer2/VBoxContainer1/ColisaoHBox" unique_id=1473913332]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="colisaoToggle" type="CheckButton" parent="HBoxContainer2/VBoxContainer1/ColisaoHBox/TogglesVBox" unique_id=38161942]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+theme = ExtResource("1_0dieh")
+script = ExtResource("8_m24d6")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer2" unique_id=495217420]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_0dieh")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer2/VBoxContainer2" unique_id=1486384266]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_1nsfn")
+stretch_mode = 3
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer2/VBoxContainer2" unique_id=1419050980]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_1nsfn")
+stretch_mode = 3
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer2/VBoxContainer2" unique_id=1451947892]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_1nsfn")
+stretch_mode = 3
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="HBoxContainer2/VBoxContainer1/ColisaoHBox/TogglesVBox/colisaoToggle" to="HBoxContainer2/VBoxContainer1/ColisaoHBox/TogglesVBox/colisaoToggle" method="_on_toggled"]
