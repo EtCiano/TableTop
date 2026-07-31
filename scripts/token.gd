@@ -35,6 +35,7 @@ func setup(asset: assetData):
 	var body_col = CollisionShape2D.new()
 	body_col.shape = shape
 	body_col.name = "BodyCollisionShape"
+	body_col.disabled = not asset.collision
 	add_child(body_col)
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
@@ -134,7 +135,5 @@ func _on_timer_timeout():
 
 func _on_config_pressed():
 	var modal_config = get_node("/root/Main/UI/ModalAssetConfig")
-	Global.asset_config = data
-	modal_config.visible = true
-	modal_config.get_node('HBoxContainer2/VBoxContainer1/imagemAsset').texture_normal = data.texture
-	#modal_config
+	Global.token_selecionado = self
+	modal_config.setup(data)

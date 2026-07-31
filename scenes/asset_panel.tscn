@@ -6,6 +6,10 @@
 [ext_resource type="Script" uid="uid://bo8os7x521j4k" path="res://scripts/controls/sliderParede.gd" id="4_5ollh"]
 [ext_resource type="Script" uid="uid://c162etx8k8xeq" path="res://scripts/controls/sliderSnap.gd" id="5_5ollh"]
 [ext_resource type="PackedScene" uid="uid://b36iu120th07h" path="res://scenes/modal_asset_config.tscn" id="6_aonxe"]
+[ext_resource type="Texture2D" uid="uid://e15x4twdcdq8" path="res://sprites/icones/diminuirIcon.png" id="7_na42i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v5vfr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="UI" type="CanvasLayer" unique_id=1692486827]
 
@@ -95,6 +99,9 @@ size_flags_vertical = 8
 text = "64 px (0.5 quadrados)"
 label_settings = ExtResource("3_q7k2b")
 
+[node name="ModalAssetConfig" parent="." unique_id=23284959 instance=ExtResource("6_aonxe")]
+visible = false
+
 [node name="sliderSnap" type="Panel" parent="." unique_id=1439139375]
 offset_left = 244.0
 offset_top = 537.0
@@ -142,8 +149,42 @@ size_flags_vertical = 8
 text = "64 px (0.5 quadrados)"
 label_settings = ExtResource("3_q7k2b")
 
-[node name="ModalAssetConfig" parent="." unique_id=23284959 instance=ExtResource("6_aonxe")]
-visible = false
+[node name="colapsarSliders" type="Button" parent="." unique_id=702461958]
+offset_left = 512.0
+offset_top = 513.0
+offset_right = 640.0
+offset_bottom = 533.0
+pivot_offset = Vector2(64, 14)
+theme_override_styles/normal = SubResource("StyleBoxFlat_v5vfr")
+
+[node name="TextureRect" type="TextureRect" parent="colapsarSliders" unique_id=436679085]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_na42i")
+expand_mode = 2
+
+[node name="colapsarAssets" type="Button" parent="." unique_id=1736440211]
+offset_left = 850.0
+offset_top = 305.0
+offset_right = 978.0
+offset_bottom = 325.0
+rotation = -1.5707964
+pivot_offset = Vector2(64, 13.5)
+theme_override_styles/normal = SubResource("StyleBoxFlat_v5vfr")
+
+[node name="TextureRect" type="TextureRect" parent="colapsarAssets" unique_id=1736440212]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_na42i")
+expand_mode = 2
 
 [connection signal="value_changed" from="sliderParede/VBoxContainer/HSlider" to="sliderParede/VBoxContainer/HSlider" method="_on_value_changed"]
 [connection signal="value_changed" from="sliderSnap/VBoxContainer/HSlider" to="sliderSnap/VBoxContainer/HSlider" method="_on_value_changed"]
